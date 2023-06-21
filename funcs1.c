@@ -1,5 +1,4 @@
 #include "monty.h"
-
 void monty_add(stack_t **stack, unsigned int line_number);
 void monty_sub(stack_t **stack, unsigned int line_number);
 void monty_div(stack_t **stack, unsigned int line_number);

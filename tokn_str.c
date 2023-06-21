@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 char **strtow(char *str, char *delims);
 int is_delim(char ch, char *delims);
 int get_word_length(char *str, char *delims);
@@ -50,11 +49,11 @@ char **strtow(char *str, char *delims)
 			words[i][n] = *(str + n);
 			n++;
 		}
-		words[i][n] = '\0'; /* set end of str */
+		words[i][n] = '\0';
 		str = get_next_word(str, delims);
 		i++;
 	}
-	words[i] = NULL; /* last element is null for iteration */
+	words[i] = NULL;
 	return (words);
 }
 /**
